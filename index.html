@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,39 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Tic Tac Toe</title>
 </head>
+
 <body>
     <h1 class="heading"><img class="logo" src="assets/images/logo.png" alt="logo"> Tic Tac Toe</h1>
 
     <div class="score-area">
-        <p class="scores">Highest P1 Streak <span id="p1-streak"></span>0</p>
-        <p class="scores">Current P1 Wins <span id="p1-score">0</span></p> 
-        <p class="scores">Current P2 Wins <span id="p2-score">0</span></p>
-        <p class="scores">Highest P2 Streak <span id="p2-streak">0</span></p>
+        <p class="scores">Highest P1 Streak: <span id="p1-streak">0</span></p>
+        <p class="scores">Current P1 Wins: <span id="p1-score">0</span></p>
+        <p class="scores">Current P2 Wins: <span id="p2-score">0</span></p>
+        <p class="scores">Highest P2 Streak: <span id="p2-streak">0</span></p>
     </div>
 
     <div class="game-area">
-        <div id="tictactoe"></div>
-        <div id="player">
-            <span id="turn">Player X</span>
-        </div>
+        <div class="board">
+            <div class="board-row">
+              <div class="board-cell"></div>
+              <div class="board-cell"></div>
+              <div class="board-cell"></div>
+            </div>
+            <div class="board-row">
+              <div class="board-cell"></div>
+              <div class="board-cell"></div>
+              <div class="board-cell"></div>
+            </div>
+            <div class="board-row">
+              <div class="board-cell"></div>
+              <div class="board-cell"></div>
+              <div class="board-cell"></div>
+            </div>
+          </div>
     </div>
 
     <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
