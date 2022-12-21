@@ -48,3 +48,5 @@ function showResult () {
 function reset () {
 
 }
+
+gameStart();
