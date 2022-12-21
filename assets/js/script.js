@@ -37,8 +37,24 @@ function selectCell (cell, index) {
     }
 }
 
+/**
+ * Determines if the game has a winner
+ */
 function checkWinner () {
+    //Check row win conditions
+    for (let i = 0; i < 3; i++) {
+        if (boardArray[i][0] === boardArray[i][1] && boardArray[i][0] === boardArray[i][2] && boardArray[i][0] !== "") {
+            return;
+        }
+        
+    }
 
+    //Check column win conditions
+    for (let i = 0; i < 3; i++) {
+        if (boardArray[0][i] === boardArray[1][i] && boardArray[0][i] === boardArray[2][i] && boardArray[0][i] !== '') {
+            return;
+        }
+    }
 }
 
 function showResult () {
