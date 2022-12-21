@@ -64,6 +64,21 @@ function checkWinner () {
             return;
         }
     }
+
+    //Checks for a tie
+    let filledCells = 0;
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            if (boardArray[i][j] != "") {
+                filledCells++;
+            }
+        }
+    }
+
+    if (filledCells === 9) {
+        return;
+    }
+
 }
 
 function showResult () {
