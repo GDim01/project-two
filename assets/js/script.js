@@ -81,12 +81,32 @@ function checkWinner () {
 
 }
 
-function showResult () {
-
+function showResult (playerSymbol) {
+    let result = document.querySelector(".result");
+    let p1Streak = parseInt(document.getElementById("p1-streak").value);
+    let p1Score = parseInt(document.getElementById("p1-score").value);
+    let p2Score = parseInt(document.getElementById("p2-score").value);
+    let p2Streak = parseInt(document.getElementById("p2-streak").value);
+    if (playerSymbol === playerOne) {
+        result.innerHTML = 'Player 1 Wins!';
+        p1Score++;
+        p2Score = 0;
+        if (p1Score > p1Streak) {p1Streak++;}
+  } else if (playerSymbol === playerTwo) {
+        result.innerHTML = 'Player 2 Win!';
+        p2Score++;
+        p1Score = 0;
+        if (p2Score > p2Streak) {p2Streak++;}
+  } else {
+        result.innerHTML = 'Tie!';
+  }
+  result.style.display = 'flex';
 }
 
 function reset () {
-
+    if () {
+        
+    }
 }
 
 gameStart();
