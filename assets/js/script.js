@@ -1,6 +1,8 @@
+//Sets player symbols
 const playerOne = "O";
 const playerTwo = "X";
 
+//Makes restart button function correctly
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
@@ -13,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+//Initialises the board array
 let boardArray = [
     ["", "", ""],
     ["", "", ""],
