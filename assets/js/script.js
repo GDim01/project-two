@@ -101,6 +101,9 @@ function checkWinner () {
 
 }
 
+/**
+ * Displays the result on the screen over the board to disallow further moves.
+ */
 function showResult (playerSymbol) {
     let result = document.querySelector(".result");
     if (playerSymbol === playerOne) {
@@ -115,6 +118,9 @@ function showResult (playerSymbol) {
   result.style.display = "flex";
 }
 
+/**
+ * Manipulates the scores depending on the winner of the game.
+ */
 function scoreAdjustment (winner) {
     let p1Streak = parseInt(document.getElementById("p1-streak").innerText);
     let p1Score = parseInt(document.getElementById("p1-score").innerText);
@@ -138,6 +144,9 @@ function scoreAdjustment (winner) {
     }
 }
 
+/**
+ * Resets the board array to empty it.
+ */
 function reset () {
     let result = document.querySelector(".result");
     let playerTurn = document.querySelector(".player-turn");
