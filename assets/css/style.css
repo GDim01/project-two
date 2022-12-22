@@ -15,24 +15,24 @@ body {
 .heading {
     text-align: center;
     display: relative;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     margin-bottom: 1rem;
 }
 
 .logo {
-    height: 40px;
+    height: 55px;
 }
 
 .scores {
     display: inline-block;
-    padding: 0 35px;
-    font-size: 1.5rem;
+    padding: 10px 35px;
+    font-size: 2.5rem;
 }
 
 .board {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   border: 1px solid #000000;
   border-right: 2px solid #000000;
 }
@@ -40,34 +40,89 @@ body {
 .board-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .board-cell {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #000000;
-  cursor: pointer;
   display: flex;
+  width: 200px;
+  height: 200px;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
+  border: 1px solid #000000;
+  cursor: pointer;
 }
+
+
 
 .result {
   position: absolute;
   top: -5px;
   left: -5px;
-  display: none;
-  align-items: center;
-  justify-content: center;
   background: #ffffff;
   color: #000000;
   font-size: 2.5rem;
+  display: none;
   font-weight: bold;
   opacity: 0.7;
-  width: 310px;
-  height: 310px;
+  width: 620px;
+  height: 620px;
+  align-items: center;
+  justify-content: center
+}
+
+.controls-area {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10px;
+}
+
+.restart {
+  font-size: 2.5rem;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .scores {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .board {
+    width: 300px;
+    height: 300px;
+  }
+
+  .board-cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+
+  .result {
+    width: 310px;
+    height: 310px;
+    font-size: 2.5rem;
+  }
+
+  .controls-area {
+    font-size: 1rem;
+  }
+
+  .restart {
+    font-size: 1rem;
+  }
 }
