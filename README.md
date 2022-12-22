@@ -3,7 +3,7 @@
 Tic-Tac-Toe is a website that has a simple game of tic-tac-toe that is played with 2 players from the same device.
 It will be useful to a visitor that wished to play a game with a friend that is simple, yet also has basic strategy elements.
 
-![Responsive Mockup](assets/images/breifne-bakery-resposive-mockup.png)
+![Responsive Mockup](assets/images/resposive-mockup.webp)
 
 ### Existing Features
 
@@ -12,28 +12,28 @@ It will be useful to a visitor that wished to play a game with a friend that is 
   - Basic header that has a simple logo and the name of the game.
   - This section will confirm to the user what the game is either by the name, or visually by the logo as the name may not be familiar to them despite knowing how to play.
 
-![Header](assets/images/navigation-bar.png)
+![Header](assets/images/header.webp)
 
 - __Scores Section__
 
   - The Scores section keeps track of the number of wins in a row each player has achieved, as well as the highest win-streak they are on.
   - The players can clearly tell who is "winning" the game.
 
-![Scores](assets/images/why-us-img.png)
+![Scores](assets/images/scores.webp)
 
 - __The Game Area__ 
 
   - The game area is the interactive part of the website which contains the board and javascript funtionality of the game itself.
   - This is the main focus of the website as it is what the players are here to do.
 
-![Game Area](assets/images/footer-img.png)
+![Game Area](assets/images/game-area.webp)
 
 - __The Controls Area__
 
   - The controls area informs the players of whose turn it is, as well as the button to go onto the next game once one ends. 
   - This section is valuable to the players as it lets them know with minimal clutter who needs to go next.
 
-![Controls Area](assets/images/products-img.png)
+![Controls Area](assets/images/controls-area.webp)
 
 ### Features Left to Implement
 
@@ -54,12 +54,13 @@ This was resolved by calling the resetGame function after the score was updated,
 
 - HTML
   - No errors were returned when passing files through the official [W3C validator](https://validator.w3.org/nu/)
-  - ![Index](assets/images/index-html-validation.png)
+  - ![Index](assets/images/html-validator.webp)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
-  - ![Style](assets/images/style-css-validation.png)
+  - ![Style](assets/images/css-validator.webp)
 - JS
-  - 
+  - Only minor warning were present when entered into JSHint [JSHint] (https://jshint.com/)
+  - ![Script](assets/images/jshint.webp)
 
 ### Lighthouse Testing
 
@@ -70,10 +71,6 @@ This was resolved by calling the resetGame function after the score was updated,
 - Mobile
   - All mobile testing scored above 90% except for the performance category via lighthouse
   - ![Index](assets/images/index-lighthouse-mobile.png)
-
-### Unfixed Bugs
-
-- The deployed page on Github Pages does not display the LinkedIn symbol, therefore hiding the link in the footer. This was not an issue while in gitpod, and despite attempting to move the script which imports the fontawesome image around and ensuring it is the right one, the issue did not get resolved
 
 ## Deployment
 
@@ -91,10 +88,9 @@ The live link can be found here - https://gdim01.github.io/project-two/
 ## Credits 
 
 ### Content 
-)
+
 - Many reminders / new attributes not in the Code Institute course were found on (https://www.w3schools.com/)
 - Original JPEGs converted to WEBPs using (https://cloudconvert.com/jpg-to-webp)
-- LinkedIn icon provided by (https://fontawesome.com/icons/linkedin?s=&f=brands)
 
 ### Media
 
