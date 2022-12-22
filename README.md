@@ -1,108 +1,144 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Tic Tac Toe
 
-Welcome GDim01,
+Breifne Bakery is a site for potential customers of the fictional company Breifne Bakery. It allows the visitor to gleam an idea into what Breifne Bakery is, what they provide, and if there is any opportunity for employment. 
+It will be useful to the visitor as while the name alone might not fully signify what the company is focused on, after visiting the site they will have a very clear understanding that this is a pizza manufacturing business.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive Mockup](assets/images/breifne-bakery-resposive-mockup.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Existing Features
 
-`python3 -m http.server`
+- __Navigation Bar__
 
-A blue button should appear to click: _Make Public_,
+  - Featured on all four pages, the full responsive navigation bar includes links to the Logo, Home page, Product page, Opportunities page and Contact page, and is identical in each page to allow for easy navigation except for the current active page. This is to clearly signify which page the user is currently on.
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-Another blue button should appear to click: _Open Browser_.
+![Navigation Bar](assets/images/navigation-bar.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __The landing page image__
 
-A blue button should appear to click: _Make Public_,
+  - The landing includes a photograph with text overlay to allow the user to see exactly what the company is about
+  - This section introduces the user to Breifne Bakery with an example pizza in an oven to grab their attention and immediately signify what the company is about
 
-Another blue button should appear to click: _Open Browser_.
+![Landing Page](assets/images/landing-page-img.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __Why Us Section__
 
-To log into the Heroku toolbelt CLI:
+  - The Why Us section lists strengths and attributes of Breifne Bakery in a concise and easy to understand manner, including images that immediately draw attention to the point stated.
+  - This user will see what the company's focuses are, and immediately let them know what the company values.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Why Us](assets/images/why-us-img.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __The Footer__ 
 
-------
+  - The footer section includes relevant copyright information, and a link to the company's LinkedIn for additional means of contact.
+  - The footer is valuable to the user as it lets them know this is a corporate entity.
 
-## Release History
+![Footer](assets/images/footer-img.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- __Products__
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  - The products page will provide the user with supporting images to see what the manufactured products look like, along with a brief description. 
+  - This section is valuable to the user as they will be able to easily identify the types of products that are produced by the company, and what it specialises in.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Products](assets/images/products-img.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __The Opportunities Page__
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  - This page will allow the user to see what kind of job vacancies are available in the company.
+  - This is useful the the user as they may see if there are any specific shortages in the workforce, and may even spark the idea for them to apply for employment at the company
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Opportunities](assets/images/opportunities-img.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- __The Contact Page__
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  - This page will allow the user to see what available methods there are to contact the company.
+  - It also lists the company's address, as well as an embedded Google map to further ease in locating of the company.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Contact](assets/images/contact-img.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Features Left to Implement
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- An additional History page would be useful to allow the user to get a much deeper background on the company, including whether or not the company has strayed from its original path.
+- This would provide valuable insight into the leadership of the company and may promote employment / B2B enterprise.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Testing 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Testing has been done to ensure that the navigation bar will always point to the correct address, leaving no chance of an error 404. Furthermore, the form in contact.html will only proceed once the Name, Surname, Email, Subject, and Message field have been 
+filled in.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The project has been tested to work on desktop, laptop, both tablet orientations, and both mobile orientations. The website will 
+adjust the content depending on the screen real estate available.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+An interesting challenge which seemed harder than it should have was making the footer behave in the way I wanted it to. I was unable to get the footer at the bottom of a scrollable page, while at the very bottom of a page that did not use the entire viewport height simultaneously. As I had not encountered flex boxes up until this point, this led me to search online for a solution. The solution was provided to me on stackoverflow, and then further allowed me to see the use of flex boxes. I then further incorporated flex boxes into my code in other areas, especially when dealing with resposive programming.
 
-------
+In future projects I will definitely rely less on the "vh" size unit, as while it did what I needed it to on the desktop side of things, it made the responsive design element much more difficult. My reasoning for using "vh" initially was that since most monitors have the same aspect ratio, this should get my project to look the same across the 3 main current resolutions (1920x1080, 2160x1440, and 3840x2160 which I am currently on). Unfortunately for myself, I did not account for the mobile ability to rotate the display, nor for the fact that when using zoom on the desktop, the elements themselves will not zoom out if based on the viewport height as opposed to a set number, or % of one.
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+### Validator Testing 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- HTML
+  - No errors were returned when passing files through the official [W3C validator](https://validator.w3.org/nu/)
+  - ![Index](assets/images/index-html-validation.png)
+  - ![Product](assets/images/products-html-validation.png)
+  - ![Opportunities](assets/images/opportunities-html-validation.png)
+  - ![Contact](assets/images/contact-html-validation.png)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+  - ![Style](assets/images/style-css-validation.png)
 
-**How will this affect me?**
+### Lighthouse Testing
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- Desktop
+  - All desktop testing scored above 90% in all categories through the lighthouse pagespeedinsights page (https://pagespeed.web.dev/)
+  - ![Index](assets/images/index-lighthouse-desktop.png)
+  - ![Product](assets/images/products-lighthouse-desktop.png)
+  - ![Opportunities](assets/images/opportunities-lighthouse-desktop.png) 
+  - ![Contact](assets/images/contact-lighthouse-desktop.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- Mobile
+  - All mobile testing scored above 90% except for the performance category via lighthouse
+  - ![Index](assets/images/index-lighthouse-mobile.png)
+  - ![Product](assets/images/products-lighthouse-mobile.png)
+  - ![Opportunities](assets/images/opportunities-lighthouse-mobile.png)
+  - ![Contact](assets/images/contact-lighthouse-mobile.png)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Unfixed Bugs
 
-**So….?**
+- A minor unfixed bug is when viewing the index page on a landscape mobile device, the final image is slightly shorter than the rest. This may be due to the use of the "vh" sizing unit which caused diffiiculty when implementing responsive design. All of the other cases where such an issue ocurred were resolved, however despite my testing I could not get the image to respond to any of my "height" selectors and values in the correct manner.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- The deployed page on Github Pages does not display the LinkedIn symbol, therefore hiding the link in the footer. This was not an issue while in gitpod, and despite attempting to move the script which imports the fontawesome image around and ensuring it is the right one, the issue did not get resolved
 
-**Can I opt out?**
+## Deployment
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - Select the Pages tab within the left column
+  - From the source section drop-down menu, select the default "Deploy from a branch" option
+  - In the branch section, select the "main" branch from the provided drop-down menu
+  - Press the save section next to the previous drop down to publish the site
+  - Wait a few moments for the website to build, which will be signified by a link appearing at the top after a refresh once sufficient time has passed
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The live link can be found here - https://gdim01.github.io/project-one/ 
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Credits 
 
----
+### Content 
 
-Happy coding!
+- The code for the footer was found on stackoverflow (https://stackoverflow.com/questions/44258085/css-how-to-attach-footer-to-the-bottom-of-the-page)
+- Many reminders / new attributes not in the Code Institute course (e.g. flex boxes) were found on (https://www.w3schools.com/)
+- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- Form dump used was from Code Institute's form dump address used during the "Love Running" project (https://formdump.codeinstitute.net/)
+- Original JPEGs converted to WEBPs using (https://cloudconvert.com/jpg-to-webp)
+- LinkedIn icon provided by (https://fontawesome.com/icons/linkedin?s=&f=brands)
+
+### Media
+
+- All of the photos used on the website are from: (https://pixabay.com/photos/)
+
+
+readme-template/README.md at master · Code-Institute-Solutions/readme-template
