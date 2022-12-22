@@ -86,7 +86,48 @@ body {
   padding: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1300px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .scores {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .board {
+    width: 420px;
+    height: 420px;
+  }
+
+  .board-cell {
+    width: 140px;
+    height: 140px;
+    font-size: 3rem;
+  }
+
+  .result {
+    width: 435px;
+    height: 435px;
+    font-size: 3rem;
+  }
+
+  .controls-area {
+    font-size: 1.5rem;
+  }
+
+  .restart {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
   .heading {
     font-size: 2.5rem;
   }
