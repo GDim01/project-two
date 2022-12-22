@@ -1,5 +1,5 @@
-const playerOne = "O"
-const playerTwo = "X"
+const playerOne = "O";
+const playerTwo = "X";
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
@@ -28,13 +28,13 @@ function gameStart () {
         cell.innerHTML = "";
         cell.addEventListener("click", selectCell.bind(null, cell, index));
     });
-};
+}
 
 /**
  * Adds functionality on board mouse click
  */
 function selectCell (cell, index) {
-    let playerTurn = document.querySelector(".player-turn")
+    let playerTurn = document.querySelector(".player-turn");
     let cellValue = cell.innerHTML;
     if (cellValue === "") {
         if (playerTurn.innerHTML === "Player 1") {
@@ -63,7 +63,6 @@ function checkWinner () {
             showResult(boardArray[i][0]);
             return;
         }
-        
     }
 
     //Check column win conditions
@@ -105,15 +104,15 @@ function checkWinner () {
 function showResult (playerSymbol) {
     let result = document.querySelector(".result");
     if (playerSymbol === playerOne) {
-        result.innerHTML = 'Player 1 Win!';
+        result.innerHTML = "Player 1 Win!";
         scoreAdjustment(1);
     } else if (playerSymbol === playerTwo) {
-        result.innerHTML = 'Player 2 Win!';
+        result.innerHTML = "Player 2 Win!";
         scoreAdjustment(2);
   } else {
-        result.innerHTML = 'Tie!';
+        result.innerHTML = "Tie!";
   }
-  result.style.display = 'flex';
+  result.style.display = "flex";
 }
 
 function scoreAdjustment (winner) {
@@ -141,18 +140,17 @@ function scoreAdjustment (winner) {
 
 function reset () {
     let result = document.querySelector(".result");
-    let playerTurn = document.querySelector(".player-turn")
-    result.style.display = "none"
-    playerTurn.innerHTML = "Player 1"
+    let playerTurn = document.querySelector(".player-turn");
+    result.style.display = "none";
+    playerTurn.innerHTML = "Player 1";
 
     boardArray = [
-        ['', '', ''],
-        ['', '', ''],
-        ['', '', '']
-    ]
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""]
+    ];
 
     gameStart();
-    
 }
 
 gameStart();
